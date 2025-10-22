@@ -10,10 +10,10 @@ const Wallet = () => {
           <Logo />
         </div>
         <div className="mb-14">
-          <h1 className="text-white text-4xl text-center font-poppins mb-5 font-bold">
+          <h1 className="text-black text-4xl text-center font-poppins mb-5 font-bold">
             Connect Wallet
           </h1>
-          <p className="text-center text-white text-[13px]">
+          <p className="text-center text-black text-[13px]">
             Please connect your wallet to continue
           </p>
         </div>

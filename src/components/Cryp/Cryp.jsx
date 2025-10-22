@@ -111,7 +111,7 @@ const Cryp = () => {
             className="flex flex-col items-center mb-5 cursor-pointer hover:scale-105 transition-all duration-[0.5s]"
           >
             <img className="w-[60px] object-contain mb-2" src={wt.img} alt={wt.title} />
-            <p className="text-[12px] text-white font-extrabold text-center">{wt.title}</p>
+            <p className="text-[12px] text-black font-extrabold text-center">{wt.title}</p>
           </div>
         ))}
       </div>

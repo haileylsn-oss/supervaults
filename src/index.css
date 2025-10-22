@@ -7,12 +7,9 @@
   --light-color: #1e2d36;
 }
 body {
-  background: linear-gradient(
-    to left,
-    var(--dark-color),
-    var(--light-color),
-    var(--dark-color)
-  );
+  background: #dcfce7;
+  color: #0c1322
+  ;
 }
 
 .dot::before {
