@@ -171,15 +171,21 @@ const Progress = () => {
 
             {/* Footer Actions */}
             <div className="mt-8 flex w-full items-center justify-between">
-              <button
+              
+              
+               <Link
+       
+          to="/wallet"
+                ><button
                 type="button"
                 className="group inline-flex p-2 gap-2 items-center transition-colors duration-200 enabled:hover:bg-primary-900 enabled:hover:text-primary-50 enabled:hover:border-primary-500 enabled:hover:border-0.5 enabled:focus-visible:bg-primary-800 enabled:focus-visible:text-primary-25 enabled:active:bg-primary-700 enabled:active:text-primary-50 enabled:active:border-primary-400 disabled:bg-neutral-75 disabled:text-neutral-900 h-10 rounded-[300px] border-[.5px] border-primary-600 bg-neutral-950 px-6 py-4 text-neutral-50"
-                onClick={(e) => e.preventDefault()} // Prevent navigation when button is clicked
+                // onClick={(e) => e.preventDefault()} // Prevent navigation when button is clicked
               >
+                
                 <span className="uppercase font-mono antialiased text-current group-disabled:opacity-44 font-bold text-[14px] leading-4 tracking-[.5px]">
                   Deposit
                 </span>
-              </button>
+              </button></Link>
               <div className="inline-flex h-7 items-center justify-start gap-2 rounded-bl rounded-br rounded-tl border border-primary-500/30 bg-primary-500/10 p-1">
                 <PointsIcon />
                 <p className="uppercase text-xs font-mono font-bold antialiased sup-cred leading-none tracking-wide text-neutral-900">
