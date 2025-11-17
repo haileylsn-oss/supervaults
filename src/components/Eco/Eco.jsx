@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Eco = () => {
+
+  const navigate = useNavigate();
+
+
   const PointsIcon = () => (
     <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-4 w-auto">
       <rect x="8" y="8" width="304" height="304" rx="152" fill="#C3BBEC"></rect>
@@ -27,18 +33,17 @@ const Eco = () => {
     </svg>
   );
 
-  const handleDeposit = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    // Add deposit logic here
-    console.log('Deposit clicked');
-  };
+const handleDeposit = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  navigate('/wallet');
+};
+
 
   const handleAdd = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    // Add to portfolio logic here
-    console.log('Add clicked');
+  e.preventDefault();
+  e.stopPropagation();
+  navigate('/wallet');
   };
 
   return (
